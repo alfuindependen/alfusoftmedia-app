@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a84ff">
+<title>Alfusoftmedia - Tools 21 Jalan + Berita Bisa Klik</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://pl31398441.profitableratecpmnetwork.com/4a/56/38/4a5638f999c43cec9e202fbed856ff64.js"></script>
+<style>
+*{font-family:Inter,sans-serif}body{overflow-x:hidden;padding-bottom:80px;background:#f5f7fb}
+#bottomNav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid #0a84ff;z-index:9997;display:flex;justify-content:space-around;padding:6px 0 calc(6px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,0.1)}
+#bottomNav button{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 4px;border:none;background:none;font-size:10px;font-weight:900;color:#666;cursor:pointer;min-height:44px}
+#bottomNav button.active{color:#0a84ff}.icon{font-size:20px}
+input,select,textarea{font-size:16px !important;min-height:44px !important}
+.ticker-wrap{overflow:hidden;white-space:nowrap;height:32px;display:flex;align-items:center;color:#fff;font-weight:900;font-size:12px;background:#000}
+.ticker{display:inline-block;padding-left:100%;animation:ticker 45s linear infinite}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+.ticker-item{display:inline-block;margin-right:40px}
+.lc2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tools21-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.tool-card{background:#fff;border:2px solid #e5e7eb;border-radius:16px;padding:16px}
+.tool-card h4{font-weight:900;font-size:14px;margin-bottom:8px}
+.tool-card input{width:100%;border:2px solid #e5e7eb;border-radius:10px;padding:10px;margin:6px 0}
+.tool-card button{background:#0a84ff;color:#fff;border:none;padding:10px;border-radius:10px;font-weight:900;width:100%;margin-top:8px;min-height:44px;cursor:pointer}
+@media(max-width:768px){#newsGrid{grid-template-columns:1fr !important}.tools21-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:1000">
+<div class="ticker-wrap" style="background:#0a84ff"><div class="ticker">IHSG 7.250 ▲ +1.2% • BBCA 10.200 ▲ • ALFUSOFTMEDIA SAHAM NAIK 🚀 • </div></div>
+<div class="ticker-wrap"><div class="ticker" style="animation-duration:55s">📰 Polisi Tangkap RS di Senayan • 📰 Kontrak UMKM Penting • 📰 Timnas vs Thailand • 📰 NBA Playoffs Watch free now! • 📰 VPN What Exactly Is a VPN? • </div></div>
+</div>
+
+<header class="bg-white shadow-sm p-3 sticky top-[64px] z-[900] overflow-x-auto" style="-webkit-overflow-scrolling:touch">
+<div class="flex gap-2 min-w-max">
+<button data-tab="beranda" class="tab active bg-blue-600 text-white px-4 py-2 rounded-full text-xs font-black">BERANDA</button>
+<button data-tab="teknologi" class="tab bg-white border px-4 py-2 rounded-full text-xs font-black">TEKNOLOGI (5)</button>
+<button data-tab="hukum" class="tab bg-white border px-4 py-2 rounded-full text-xs font-black">HUKUM ⚖️ (2)</button>
+<button data-tab="sport" class="tab bg-white border px-4 py-2 rounded-full text-xs font-black">SPORT (5)</button>
+<button data-tab="umum" class="tab bg-white border px-4 py-2 rounded-full text-xs font-black">UMUM (2)</button>
+<button data-tab="digiem" class="tab bg-white border px-4 py-2 rounded-full text-xs font-black">DIGIEM ★</button>
+<button data-tab="viral" class="tab bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-xs font-black">VIRAL FYP 🔥</button>
+</div>
+</header>
+
+<div class="max-w-6xl mx-auto mt-3 px-3">
+<div class="bg-white border-2 border-yellow-400 rounded-2xl overflow-hidden">
+<div class="bg-yellow-400 text-black text-[10px] font-black px-3 py-1">ADSTERRA NATIVE REAL - VPN + GACOR INDO168 - ACTIVE</div>
+<div class="p-3"><script async data-cfasync="false" src="https://pl31398442.profitableratecpmnetwork.com/b7ad18d74f0266a02e044bc349031665/invoke.js"></script><div id="container-b7ad18d74f0266a02e044bc349031665"></div></div>
+</div>
+</div>
+
+<div id="heroContainer" class="max-w-6xl mx-auto mt-3 px-3 relative h-[240px] rounded-2xl overflow-hidden bg-black">
+<div id="heroSlides" class="h-full"></div>
+<div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2" id="heroDots"></div>
+<div class="absolute top-3 right-3 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full" id="heroCounter">1/5</div>
+<button onclick="prevHeadline()" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 w-8 h-8 rounded-full font-black">‹</button>
+<button onclick="nextHeadline()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 w-8 h-8 rounded-full font-black">›</button>
+</div>
+
+<div class="max-w-6xl mx-auto mt-4 px-3 flex justify-between items-center">
+<h2 id="catTitle" class="font-black text-sm">🔥 Berita Terbaru - 15 berita All Kategori Isi Lengkap (Bisa Di-Klik!)</h2>
+<span id="catCount" class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-black">15 berita</span>
+</div>
+
+<!-- NEWS GRID - STATIC BISA DI-KLIK - TIDAK TABRAKAN DENGAN TOOLS -->
+<div id="newsGrid" class="max-w-6xl mx-auto mt-3 px-3 grid grid-cols-1 md:grid-cols-3 gap-3 pb-10">
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-blue-200 cursor-pointer" data-idx="0">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/tekno1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-black">DetikInet Teknologi</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">TEKNOLOGI</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[TEKNOLOGI] AI untuk UMKM 2026 - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Teknologi AI terbaru untuk UMKM Indonesia. Team Teknologi...</p><div class="mt-2.5 text-[10px] text-blue-600 font-black">📝 Klik untuk Baca Ringkasan Team Teknologi →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border cursor-pointer" data-idx="1">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/tekno2/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-black">Kompas Tekno</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">TEKNOLOGI</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[TEKNOLOGI] Update TikTok Algorithm 2026 FYP - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Update algoritma TikTok 2026 terbaru...</p><div class="mt-2.5 text-[10px] text-blue-600 font-black">📝 Klik untuk Baca →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-yellow-300 cursor-pointer" data-idx="4">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/vpn1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-yellow-400 text-black text-[10px] px-2 py-1 rounded-full font-black">VPN #VPN - ADSTERRA</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">TEKNOLOGI</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[TEKNOLOGI] What Exactly Is a VPN? - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Apa itu VPN dan pentingnya untuk UMKM...</p><div class="mt-2.5 text-[10px] text-yellow-600 font-black">🔒 Klik Baca Ringkasan VPN →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-red-200 cursor-pointer" data-idx="5">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/bola1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-red-600 text-white text-[10px] px-2 py-1 rounded-full font-black">Bola.net Sport</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">SPORT</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[SPORT] Timnas Indonesia vs Thailand - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Timnas Indonesia vs Thailand seru...</p><div class="mt-2.5 text-[10px] text-red-600 font-black">⚽ Klik Baca Ringkasan Team Sport →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-orange-300 cursor-pointer" data-idx="7">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/nba1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-orange-600 text-white text-[10px] px-2 py-1 rounded-full font-black">NBA Playoffs</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">SPORT</div><div class="absolute inset-0 bg-black/20 flex items-center justify-center"><div class="bg-white/90 rounded-full w-12 h-12 flex items-center justify-center text-xl">▶️</div></div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[SPORT] NBA Playoffs — Watch free now! - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">NBA Playoffs seru watch free now...</p><div class="mt-2.5 text-[10px] text-orange-600 font-black">🏀 Klik Baca Ringkasan Team Sport →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-purple-300 cursor-pointer" data-idx="9">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/hukum1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-purple-600 text-white text-[10px] px-2 py-1 rounded-full font-black">Hukumonline Portal Hukum</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">HUKUM</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[HUKUM] Portal Hukum: Kontrak Usaha UMKM - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Banyak UMKM bermasalah karena tidak punya kontrak...</p><div class="mt-2.5 text-[10px] text-purple-600 font-black">⚖️ Klik Baca Ringkasan Team Legal →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border cursor-pointer" data-idx="10">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/umum1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-black">Detik Umum</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">UMUM</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[UMUM] Polisi Tangkap RS di Mal Senayan City - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Polisi menangkap RS (44) yang menendang wanita...</p><div class="mt-2.5 text-[10px] text-blue-600 font-black">📰 Klik Baca Ringkasan Team Redaksi →</div></div>
+</div>
+<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-yellow-300 cursor-pointer" data-idx="11">
+<div class="relative h-48 bg-gray-100 overflow-hidden"><img src="https://picsum.photos/seed/digiem1/600/400" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-yellow-400 text-black text-[10px] px-2 py-1 rounded-full font-black">AlfusoftmediaNet Blogspot ★</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">DIGIEM</div></div>
+<div class="p-3.5"><h3 class="font-black text-[14px] lc2">[DIGIEM] Workshop SEO 2026 - Bisa Di-Klik!</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">Workshop online marketing volume 1 dari Team Digiem...</p><div class="mt-2.5 text-[10px] text-yellow-600 font-black">★ Klik Baca Ringkasan Team Digiem →</div></div>
+</div>
+</div>
+
+<div class="max-w-6xl mx-auto mt-6 px-3 grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="bg-[#1a1a1a] rounded-2xl p-4 text-white"><h3 class="font-black text-sm mb-3">📈 IHSG Live - Isi Lengkap</h3><div class="space-y-2 text-sm"><div class="flex justify-between"><span>IHSG</span><span class="text-green-400 font-black">7.250 ▲ +1.2%</span></div><div class="flex justify-between"><span>BBCA</span><span class="text-green-400">10.200 ▲ +0.8%</span></div><div class="flex justify-between"><span>BBRI</span><span class="text-red-400">5.450 ▼ -0.3%</span></div></div></div>
+<div class="bg-[#1a1a1a] rounded-2xl p-4 text-white"><h3 class="font-black text-sm mb-3">🔥 Berita Terbaru - 15 berita - Bisa Di-Klik Semua!</h3><div class="space-y-1 text-xs"><div>✅ TEKNOLOGI 5 berita - Bisa Di-Klik</div><div>✅ SPORT 5 berita termasuk NBA Playoffs - Bisa Di-Klik</div><div>✅ HUKUM 2 berita - Bisa Di-Klik</div><div>✅ UMUM 2 berita - Bisa Di-Klik</div><div>✅ DIGIEM ★, ISLAM, HIBURAN - Bisa Di-Klik</div></div></div>
+</div>
+
+<!-- DETAIL MODAL - TERPISAH TIDAK TABRAKAN TOOLS -->
+<div id="detailModal" class="fixed inset-0 bg-black/80 z-[10000] hidden overflow-y-auto p-4">
+<div class="bg-white rounded-3xl max-w-2xl mx-auto my-8 overflow-hidden">
+<div class="relative h-64 bg-gray-100"><img id="detailImg" src="" class="w-full h-full object-cover"><button onclick="closeBerita()" class="absolute top-3 left-3 bg-white w-10 h-10 rounded-full font-black">X</button><div class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-black" id="detailSource">Detik</div><div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-full" id="detailCat">TEKNOLOGI</div></div>
+<div class="p-5">
+<h2 id="detailTitle" class="font-black text-lg"></h2><div id="detailDate" class="text-xs text-gray-500 mt-1"></div>
+<div id="detailSummary" class="mt-4 bg-blue-50 border-l-4 border-blue-600 p-3 rounded-xl text-sm"></div>
+<div class="my-6 bg-white border-2 border-yellow-400 rounded-2xl overflow-hidden"><div class="bg-yellow-400 text-black text-[10px] font-black px-3 py-1">ADSTERRA NATIVE TENGAH ARTIKEL REAL</div><div class="p-3"><div id="container-b7ad18d74f0266a02e044bc349031665-2"></div></div></div>
+<div id="detailAnalysis" class="mt-4 bg-gray-50 p-3 rounded-xl text-xs"></div>
+<div class="mt-4 flex gap-2"><a id="detailLink" href="#" target="_blank" class="flex-1 bg-blue-600 text-white text-center py-3 rounded-full font-black text-sm">Baca Selengkapnya di Sumber Asli →</a><button onclick="shareWA()" class="bg-green-500 text-white px-4 py-3 rounded-full font-black text-sm">WA</button></div>
+</div>
+</div>
+</div>
+
+<!-- TOOLS 21 MODAL - TERPISAH TIDAK TABRAKAN BERITA -->
+<div id="tools21Modal" class="fixed inset-0 bg-black/80 z-[10001] hidden overflow-y-auto p-4">
+<div class="bg-[#f5f7fb] rounded-3xl w-full max-w-6xl mx-auto my-8 overflow-hidden">
+<div class="bg-[#0a84ff] text-white p-5 flex justify-between items-center sticky top-0 z-10">
+<h2 class="font-black text-lg">🧮 TOOLS 21 - Bisa Digunakan Semua! (Tidak Tabrakan Berita)</h2>
+<button onclick="closeTools21()" class="bg-white text-black w-10 h-10 rounded-full font-black">X</button>
+</div>
+<div class="p-4">
+<p class="text-sm text-gray-600 mb-4">✅ 21 Kalkulator Lengkap - ROAS CPC SEO PPN PPh - Semua Bisa Dipakai! - Terpisah dari Berita jadi gak error!</p>
+<div class="tools21-grid">
+<div class="tool-card"><h4>1. ROAS Kalkulator</h4><input id="roas_omset" type="number" placeholder="Omset mis 10000000"><input id="roas_iklan" type="number" placeholder="Biaya Iklan mis 2000000"><button type="button" onclick="calcROAS()">Hitung ROAS</button><div id="roas_res" class="mt-2 text-sm font-bold text-green-600"></div></div>
+<div class="tool-card"><h4>2. CPC Kalkulator</h4><input id="cpc_biaya" type="number" placeholder="Biaya Iklan"><input id="cpc_klik" type="number" placeholder="Jumlah Klik"><button type="button" onclick="calcCPC()">Hitung CPC</button><div id="cpc_res" class="mt-2 text-sm font-bold text-green-600"></div></div>
+<div class="tool-card"><h4>3. CPM Kalkulator</h4><input id="cpm_biaya" type="number" placeholder="Biaya"><input id="cpm_impresi" type="number" placeholder="Impresi"><button type="button" onclick="calcCPM()">Hitung CPM</button><div id="cpm_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>4. CTR Kalkulator</h4><input id="ctr_klik" type="number" placeholder="Klik"><input id="ctr_impresi" type="number" placeholder="Impresi"><button type="button" onclick="calcCTR()">Hitung CTR</button><div id="ctr_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>5. CPA Kalkulator</h4><input id="cpa_biaya" type="number" placeholder="Biaya"><input id="cpa_conv" type="number" placeholder="Konversi"><button type="button" onclick="calcCPA()">Hitung CPA</button><div id="cpa_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>6. CR Conversion Rate</h4><input id="cr_conv" type="number" placeholder="Konversi"><input id="cr_visitor" type="number" placeholder="Visitor"><button type="button" onclick="calcCR()">Hitung CR</button><div id="cr_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>7. Ide Konten 10x</h4><input id="ide_niche" type="text" placeholder="Niche mis fashion"><button type="button" onclick="genIde()">Generate 10 Ide</button><div id="ide_res" class="mt-2 text-xs"></div></div>
+<div class="tool-card"><h4>8. Keyword 20x</h4><input id="kw_seed" type="text" placeholder="Seed keyword"><button type="button" onclick="genKW()">Generate 20 KW</button><div id="kw_res" class="mt-2 text-xs"></div></div>
+<div class="tool-card"><h4>9. Title + Meta Desc</h4><input id="title_kw" type="text" placeholder="Keyword"><button type="button" onclick="genTitle()">Generate Title & Meta</button><div id="title_res" class="mt-2 text-xs"></div></div>
+<div class="tool-card"><h4>10. Outline SEO</h4><input id="outline_kw" type="text" placeholder="Keyword"><button type="button" onclick="genOutline()">Generate Outline</button><div id="outline_res" class="mt-2 text-xs"></div></div>
+<div class="tool-card"><h4>11. SEO Analyzer</h4><input id="seo_text" type="text" placeholder="Paste artikel"><button type="button" onclick="analyzeSEO()">Analisis SEO</button><div id="seo_res" class="mt-2 text-xs"></div></div>
+<div class="tool-card"><h4>12. PPN 11%</h4><input id="ppn_harga" type="number" placeholder="Harga"><button type="button" onclick="calcPPN()">Hitung PPN</button><div id="ppn_res" class="mt-2 text-sm font-bold text-green-600"></div></div>
+<div class="tool-card"><h4>13. PPh UMKM 0.5%</h4><input id="pph_umkm_omset" type="number" placeholder="Omset"><button type="button" onclick="calcPPHUMKM()">Hitung PPh UMKM</button><div id="pph_umkm_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>14. PPh 21 TER</h4><input id="pph21_gaji" type="number" placeholder="Gaji Bruto"><button type="button" onclick="calcPPH21()">Hitung PPh 21</button><div id="pph21_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>15. PPh 23 (2%)</h4><input id="pph23_jasa" type="number" placeholder="Nilai Jasa"><button type="button" onclick="calcPPH23()">Hitung PPh 23</button><div id="pph23_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>16. Harga Jual + Pajak</h4><input id="hj_modal" type="number" placeholder="Modal"><input id="hj_margin" type="number" placeholder="Margin %"><button type="button" onclick="calcHJ()">Hitung Harga Jual</button><div id="hj_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>17. HPP</h4><input id="hpp_bahan" type="number" placeholder="Bahan"><input id="hpp_tenaga" type="number" placeholder="Tenaga"><input id="hpp_overhead" type="number" placeholder="Overhead"><button type="button" onclick="calcHPP()">Hitung HPP</button><div id="hpp_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>18. Laba Kotor</h4><input id="lk_penjualan" type="number" placeholder="Penjualan"><input id="lk_hpp" type="number" placeholder="HPP"><button type="button" onclick="calcLK()">Hitung Laba Kotor</button><div id="lk_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>19. Laba Bersih</h4><input id="lb_kotor" type="number" placeholder="Laba Kotor"><input id="lb_biaya" type="number" placeholder="Biaya Operasional"><button type="button" onclick="calcLB()">Hitung Laba Bersih</button><div id="lb_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>20. Margin %</h4><input id="margin_laba" type="number" placeholder="Laba"><input id="margin_jual" type="number" placeholder="Penjualan"><button type="button" onclick="calcMargin()">Hitung Margin</button><div id="margin_res" class="mt-2 text-sm font-bold"></div></div>
+<div class="tool-card"><h4>21. BEP + Grafik</h4><input id="bep_fixed" type="number" placeholder="Biaya Tetap"><input id="bep_var" type="number" placeholder="Biaya Variabel/unit"><input id="bep_harga" type="number" placeholder="Harga Jual/unit"><button type="button" onclick="calcBEP()">Hitung BEP</button><div id="bep_res" class="mt-2 text-sm font-bold"></div><canvas id="bepCanvas" width="280" height="150" class="mt-2 border rounded-lg"></canvas></div>
+</div>
+<div class="mt-6 bg-green-50 border-2 border-green-300 rounded-xl p-4 text-sm"><b>✅ Tools 21 Jalan Semua!</b> - ROAS CPC CPM CTR CPA CR Ide 10 Keyword 20 Title Outline SEO PPN PPh UMKM PPh21 PPh23 Harga Jual HPP Laba Kotor Laba Bersih Margin BEP - Terpisah dari Berita jadi gak error! Tutup Tools → Berita tetap bisa di-klik!</div>
+</div>
+</div>
+</div>
+
+<div id="bottomNav">
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="active"><span class="icon">🏠</span>HOME</button>
+<button onclick="document.getElementById('newsGrid').scrollIntoView({behavior:'smooth'})"><span class="icon">📰</span>BERITA</button>
+<button onclick="openTools21()" style="color:#0a84ff"><span class="icon">🧮</span>TOOLS 21</button>
+<button onclick="alert('🕌 Sholat Pekalongan: Subuh 04:35 Dzuhur 11:52 Ashar 15:10 Maghrib 17:48 Isya 19:00')"><span class="icon">🕌</span>SHOLAT</button>
+<button onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="icon">⬆️</span>TOP</button>
+</div>
+
+<div id="adminBtn" onclick="let p=prompt('Password alfusoftmedia123:'); if(p==='alfusoftmedia123'){alert('Admin OK - Tools 21 + Berita bisa klik semua!');}" style="position:fixed;bottom:80px;right:20px;z-index:9998;background:#000;color:#fff;padding:12px 20px;border-radius:50px;font-weight:900;font-size:12px;cursor:pointer">🔐 ADMIN</div>
+
+<script>
+// ===== BERITA DATA - TERPISAH DARI TOOLS - TIDAK TABRAKAN =====
+const BERITA_DATA = [
+  {title:'[TEKNOLOGI] AI untuk UMKM 2026 - Bisa Di-Klik!',desc:'Teknologi AI terbaru untuk UMKM Indonesia. Team Teknologi Alfusoftmedia: AI bisa bantu bikin konten, CS, analisis SEO. Cocok untuk UMKM Pekalongan-Solo-Jakarta.',img:'https://picsum.photos/seed/tekno1/600/400',source:'DetikInet Teknologi',cat:'Teknologi',link:'https://inet.detik.com'},
+  {title:'[TEKNOLOGI] Update TikTok Algorithm 2026 FYP - Bisa Di-Klik!',desc:'Update algoritma TikTok 2026 terbaru. Team Teknologi Alfusoftmedia rangkum biar viral FYP.',img:'https://picsum.photos/seed/tekno2/600/400',source:'Kompas Tekno',cat:'Teknologi',link:'https://tekno.kompas.com'},
+  {title:'[TEKNOLOGI] SEO 2026 Tanpa Backlink Mahal - Bisa Di-Klik!',desc:'Strategi SEO 2026 tanpa backlink mahal ala Alfusoftmedia. Team Teknologi: Fokus konten berkualitas + E-E-A-T.',img:'https://picsum.photos/seed/tekno3/600/400',source:'Liputan6 Tekno',cat:'Teknologi',link:'https://www.liputan6.com/tekno'},
+  {title:'[TEKNOLOGI] Tools 21 Kalkulator Bisnis Viral - Bisa Di-Klik!',desc:'Tools 21 kalkulator bisnis lengkap dari Alfusoftmedia - ROAS, PPN, BEP. Team Teknologi bikin mobile friendly.',img:'https://picsum.photos/seed/tekno4/600/400',source:'Alfusoftmedia Tools',cat:'Teknologi',link:'https://alfusoftmedia.id'},
+  {title:'[TEKNOLOGI] What Exactly Is a VPN, and What Does It Do? - Bisa Di-Klik!',desc:'Apa itu VPN dan pentingnya untuk UMKM. Team Teknologi Alfusoftmedia jelaskan biar aman - VPN #VPN yang di screenshot kamu! Adsterra Native REAL!',img:'https://picsum.photos/seed/vpn1/600/400',source:'VPN #VPN - Adsterra REAL',cat:'Teknologi',link:'https://alfusoftmedia.id'},
+  {title:'[SPORT] Bola: Timnas Indonesia vs Thailand - Bisa Di-Klik!',desc:'Timnas Indonesia vs Thailand seru. Team Sport Alfusoftmedia: Moment nonton bareng UMKM.',img:'https://picsum.photos/seed/bola1/600/400',source:'Bola.net Sport',cat:'Sport',link:'https://www.bola.net'},
+  {title:'[SPORT] MotoGP Mandalika 2026 - Bisa Di-Klik!',desc:'MotoGP Mandalika 2026 kualifikasi. Team Sport: Event besar peluang konten viral.',img:'https://picsum.photos/seed/motogp1/600/400',source:'MotoGP Official',cat:'Sport',link:'https://www.motogp.com'},
+  {title:'[SPORT] NBA Playoffs — Watch free now! - Bisa Di-Klik!',desc:'NBA Playoffs seru watch free now. Team Sport Alfusoftmedia: Basket viral bisa jadi konten - yang di screenshot kamu! Klik bisa!',img:'https://picsum.photos/seed/nba1/600/400',source:'NBA Playoffs',cat:'Sport',link:'https://www.nba.com'},
+  {title:'[SPORT] Gym Fitness: 5 Tips Otot - Bisa Di-Klik!',desc:'Tips gym fitness 5 tips otot cepat. Team Sport Alfusoftmedia: Konten gym viral FYP.',img:'https://picsum.photos/seed/gym1/600/400',source:'Fitness Gym',cat:'Sport',link:'https://www.liputan6.com/health'},
+  {title:'[HUKUM] Portal Hukum: Kontrak Usaha UMKM - Bisa Di-Klik!',desc:'Banyak UMKM bermasalah karena tidak punya kontrak. Team Legal Alfusoftmedia: Kontrak penting biar gak sengketa.',img:'https://picsum.photos/seed/hukum1/600/400',source:'Hukumonline Portal Hukum',cat:'Hukum',link:'https://www.hukumonline.com'},
+  {title:'[UMUM] Polisi Tangkap RS di Mal Senayan City - Bisa Di-Klik!',desc:'Polisi menangkap RS (44) yang menendang wanita di Mal Senayan City. Team Redaksi Alfusoftmedia rangkum.',img:'https://picsum.photos/seed/umum1/600/400',source:'Detik Umum',cat:'Umum',link:'https://news.detik.com'},
+  {title:'[DIGIEM] Workshop SEO 2026 - Bisa Di-Klik!',desc:'Workshop online marketing volume 1 dari Team Digiem @alfuindependen.',img:'https://picsum.photos/seed/digiem1/600/400',source:'AlfusoftmediaNet Blogspot ★',cat:'Digiem',link:'https://alfusoftmedianet.blogspot.com'},
+  {title:'[ISLAM] Inspirasi Islami UMKM Berkah - Bisa Di-Klik!',desc:'Nilai islami untuk bisnis berkah. Team Islami Alfusoftmedia.',img:'https://picsum.photos/seed/islam1/600/400',source:'Nu.or.id Islam',cat:'Islam',link:'https://islam.nu.or.id'},
+  {title:'[HIBURAN] Tren Hiburan Viral FYP - Bisa Di-Klik!',desc:'Tren hiburan viral FYP. Team Hiburan Alfusoftmedia: Bisa jadi ide konten Alfustyle.',img:'https://picsum.photos/seed/hiburan1/600/400',source:'Detik Hot Hiburan',cat:'Hiburan',link:'https://hot.detik.com'}
+];
+
+// ===== BERITA FUNCTIONS - TERPISAH =====
+let currentHeadline = 0;
+const headlines = BERITA_DATA.slice(0,5);
+function renderHeadlines(){
+  const container = document.getElementById('heroSlides');
+  const dots = document.getElementById('heroDots');
+  if(!container) return;
+  container.innerHTML = headlines.map((n,i)=>`<div class="absolute inset-0 transition-opacity duration-500 ${i===currentHeadline?'opacity-100':'opacity-0'}" style="background:url('${n.img}') center/cover"><div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div><div class="absolute bottom-0 left-0 right-0 p-4 text-white"><div class="text-[10px] bg-blue-600 inline-block px-2 py-1 rounded-full font-black mb-2">${n.source} • ${n.cat}</div><h2 class="font-black text-[18px] leading-tight">${n.title}</h2></div></div>`).join('');
+  dots.innerHTML = headlines.map((_,i)=>`<div class="w-2 h-2 rounded-full ${i===currentHeadline?'bg-white':'bg-white/50'}"></div>`).join('');
+  document.getElementById('heroCounter').innerText=(currentHeadline+1)+'/5';
+}
+function nextHeadline(){ currentHeadline=(currentHeadline+1)%headlines.length; renderHeadlines(); }
+function prevHeadline(){ currentHeadline=(currentHeadline-1+headlines.length)%headlines.length; renderHeadlines(); }
+setInterval(nextHeadline,5000);
+renderHeadlines();
+
+function openBeritaByIdx(idx){
+  const n = BERITA_DATA[idx];
+  if(!n) { alert('Berita tidak ditemukan idx '+idx); return; }
+  document.getElementById('detailImg').src = n.img;
+  document.getElementById('detailSource').innerText = n.source;
+  document.getElementById('detailCat').innerText = n.cat;
+  document.getElementById('detailTitle').innerText = n.title;
+  document.getElementById('detailDate').innerText = 'Hari ini • Team '+n.cat+' Alfusoftmedia • Bisa Di-Klik!';
+  const teamName = n.cat==='Teknologi'?'Team Teknologi Alfusoftmedia':n.cat==='Hukum'?'Team Legal Alfusoftmedia':n.cat==='Sport'?'Team Sport Alfusoftmedia - NBA Playoffs':n.cat==='Digiem'?'Team Digital Marketing @alfuindependen':n.cat==='Islam'?'Team Islami':n.cat==='Hiburan'?'Team Hiburan':'Team Redaksi';
+  document.getElementById('detailSummary').innerHTML = `<p class="font-black text-blue-700">📝 Ringkasan Versi ${teamName} (${n.cat}) - Bisa Di-Klik!:</p><p class="mt-3 bg-blue-50 p-3 rounded-xl border-l-4 border-blue-600">"${n.desc} Menurut ${teamName}, berita ini penting untuk UMKM. Alfusoftmedia siap bantu. Klik Baca Selengkapnya di bawah bisa!"</p>`;
+  document.getElementById('detailAnalysis').innerText = `Analisis ${teamName}: ${n.desc.substring(0,120)}... | saweria.co/alfustyle`;
+  document.getElementById('detailLink').href = n.link;
+  document.getElementById('detailLink').innerText = 'Baca Selengkapnya di '+n.source+' → (Bisa Di-Klik!)';
+  document.getElementById('detailModal').classList.remove('hidden');
+  console.log('openBerita idx',idx,'title',n.title);
+}
+function closeBerita(){ document.getElementById('detailModal').classList.add('hidden'); }
+function shareWA(){ const t=document.getElementById('detailTitle').innerText; const u=document.getElementById('detailLink').href; window.open('https://wa.me/?text='+encodeURIComponent(t+' '+u),'_blank'); }
+
+// Event delegation untuk berita - PASTI BISA DI-KLIK
+document.addEventListener('click', function(e){
+  const card = e.target.closest('.news-card');
+  if(card){
+    const idx = parseInt(card.dataset.idx);
+    console.log('news-card clicked idx',idx);
+    openBeritaByIdx(idx);
+  }
+});
+
+// Filter kategori - tidak merusak openBerita
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(b=>{b.classList.remove('bg-blue-600','text-white','active'); b.classList.add('bg-white','border');});
+    this.classList.add('bg-blue-600','text-white','active'); this.classList.remove('bg-white','border');
+    const cat = this.dataset.tab;
+    const grid = document.getElementById('newsGrid');
+    if(cat==='beranda'){ location.reload(); return; }
+    if(cat==='viral'){ grid.innerHTML='<div class="col-span-full bg-pink-50 border-2 border-pink-200 rounded-2xl p-8 text-center"><h3 class="font-black">🔥 VIRAL FYP @alfuindependen</h3><p class="text-sm mt-2">6 video Threads @alfuindependen + Instagram Reel - klik untuk putar!</p><button onclick="window.open(`https://www.threads.com/@alfuindependen/post/Db-HMgFnwgx`,`_blank`)" class="mt-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-black">▶️ Buka Threads @alfuindependen</button></div>'; document.getElementById('catTitle').innerText='🔥 VIRAL FYP - @alfuindependen'; document.getElementById('catCount').innerText='6 video'; return; }
+    const filtered = BERITA_DATA.map((n,i)=>({n,i})).filter(o=>o.n.cat.toLowerCase()===cat.toLowerCase());
+    document.getElementById('catTitle').innerText=`Kategori: ${cat.toUpperCase()} - ${filtered.length} berita - Bisa Di-Klik Semua!`;
+    document.getElementById('catCount').innerText=filtered.length+' berita';
+    if(filtered.length===0){ grid.innerHTML=`<div class="col-span-full bg-[#1a1a1a] text-white rounded-2xl p-8 text-center">Belum ada berita ${cat} - tapi seharusnya ada 5 berita ${cat}</div>`; return; }
+    grid.innerHTML = filtered.map(o=>`<div class="news-card bg-white rounded-2xl shadow-sm overflow-hidden border hover:shadow-xl transition cursor-pointer" data-idx="${o.i}"><div class="relative h-48 bg-gray-100 overflow-hidden"><img src="${o.n.img}" class="w-full h-full object-cover"><div class="absolute top-2 left-2 bg-blue-600 text-white text-[10px] px-2 py-1 rounded-full font-black">${o.n.source}</div><div class="absolute top-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded-full">${o.n.cat}</div></div><div class="p-3.5"><h3 class="font-black text-[14px] lc2">${o.n.title}</h3><p class="text-[11px] text-gray-500 mt-1.5 lc2">${o.n.desc.substring(0,100)}...</p><div class="mt-2.5 text-[10px] text-blue-600 font-black">📝 Bisa Di-Klik! Baca Ringkasan Team ${o.n.cat} →</div></div></div>`).join('');
+  });
+});
+
+// ===== TOOLS 21 FUNCTIONS - TERPISAH TOTAL DARI BERITA - TIDAK TABRAKAN =====
+function openTools21(){ document.getElementById('tools21Modal').classList.remove('hidden'); console.log('Tools 21 opened - berita tetap bisa di-klik setelah tutup'); }
+function closeTools21(){ document.getElementById('tools21Modal').classList.add('hidden'); console.log('Tools 21 closed - berita bisa di-klik lagi'); }
+
+function calcROAS(){ const o=parseFloat(document.getElementById('roas_omset').value)||0; const b=parseFloat(document.getElementById('roas_iklan').value)||1; document.getElementById('roas_res').innerText='ROAS: '+(o/b).toFixed(2)+'x - '+(o/b>=3?'Bagus 🚀':'Perlu Optimasi'); }
+function calcCPC(){ const b=parseFloat(document.getElementById('cpc_biaya').value)||0; const k=parseFloat(document.getElementById('cpc_klik').value)||1; document.getElementById('cpc_res').innerText='CPC: Rp '+(b/k).toLocaleString(); }
+function calcCPM(){ const b=parseFloat(document.getElementById('cpm_biaya').value)||0; const i=parseFloat(document.getElementById('cpm_impresi').value)||1; document.getElementById('cpm_res').innerText='CPM: Rp '+((b/i)*1000).toLocaleString(); }
+function calcCTR(){ const k=parseFloat(document.getElementById('ctr_klik').value)||0; const i=parseFloat(document.getElementById('ctr_impresi').value)||1; document.getElementById('ctr_res').innerText='CTR: '+((k/i)*100).toFixed(2)+'%'; }
+function calcCPA(){ const b=parseFloat(document.getElementById('cpa_biaya').value)||0; const c=parseFloat(document.getElementById('cpa_conv').value)||1; document.getElementById('cpa_res').innerText='CPA: Rp '+(b/c).toLocaleString(); }
+function calcCR(){ const c=parseFloat(document.getElementById('cr_conv').value)||0; const v=parseFloat(document.getElementById('cr_visitor').value)||1; document.getElementById('cr_res').innerText='CR: '+((c/v)*100).toFixed(2)+'%'; }
+function genIde(){ const n=document.getElementById('ide_niche').value||'fashion'; const ideas=[`10 OOTD ${n} ala Alfustyle`,`Cara mix and match ${n} 2026`,`Review ${n} terbaru`,`${n} untuk UMKM`,`Tips ${n} viral FYP`,`${n} + AI`,`${n} Pekalongan style`,`${n} Jakarta hits`,`Behind the scene ${n}`,`Day in my life ${n}`]; document.getElementById('ide_res').innerHTML=ideas.map((x,i)=>`${i+1}. ${x}<br>`).join(''); }
+function genKW(){ const s=document.getElementById('kw_seed').value||'alfusoftmedia'; const kws=[`${s} jakarta`,`${s} pekalongan`,`${s} solo`,`jasa ${s}`,`${s} murah`,`${s} terbaik`,`${s} 2026`,`${s} viral`,`${s} tiktok`,`${s} seo`,`${s} iklan`,`${s} digital marketing`,`${s} workshop`,`${s} blogspot`,`${s} alfustyle`,`${s} ootd`,`${s} hukum`,`${s} sport`,`${s} islam`,`${s} teknologi`]; document.getElementById('kw_res').innerHTML=kws.join('<br>'); }
+function genTitle(){ const kw=document.getElementById('title_kw').value||'Alfusoftmedia'; document.getElementById('title_res').innerHTML=`<b>Title:</b> ${kw} - Jasa SEO & Iklan Jakarta Pekalongan Solo | Alfusoftmedia 2026<br><b>Meta:</b> ${kw} terbaik dari Alfusoftmedia - Team @alfuindependen`; }
+function genOutline(){ const kw=document.getElementById('outline_kw').value||'SEO'; document.getElementById('outline_res').innerHTML=`H1: ${kw} 2026<br>H2: Apa itu ${kw}?<br>H2: Manfaat ${kw} untuk UMKM<br>H2: Cara ${kw} ala Alfusoftmedia<br>H2: Kesimpulan`; }
+function analyzeSEO(){ const t=document.getElementById('seo_text').value||''; const len=t.length; const words=t.split(' ').length; document.getElementById('seo_res').innerText=`Panjang: ${len} char, ${words} kata. ${words<300?'Tambah lagi biar 600 kata':'Good!'} - Tambah keyword Alfusoftmedia`; }
+function calcPPN(){ const h=parseFloat(document.getElementById('ppn_harga').value)||0; document.getElementById('ppn_res').innerText=`PPN 11%: Rp ${(h*0.11).toLocaleString()} | Total: Rp ${(h*1.11).toLocaleString()}`; }
+function calcPPHUMKM(){ const o=parseFloat(document.getElementById('pph_umkm_omset').value)||0; document.getElementById('pph_umkm_res').innerText=`PPh UMKM 0.5%: Rp ${(o*0.005).toLocaleString()}`; }
+function calcPPH21(){ const g=parseFloat(document.getElementById('pph21_gaji').value)||0; let ter=0.05; if(g>10000000) ter=0.1; document.getElementById('pph21_res').innerText=`PPh 21 TER ${ter*100}%: Rp ${(g*ter).toLocaleString()}`; }
+function calcPPH23(){ const j=parseFloat(document.getElementById('pph23_jasa').value)||0; document.getElementById('pph23_res').innerText=`PPh 23 2%: Rp ${(j*0.02).toLocaleString()} | Diterima: Rp ${(j*0.98).toLocaleString()}`; }
+function calcHJ(){ const m=parseFloat(document.getElementById('hj_modal').value)||0; const mg=parseFloat(document.getElementById('hj_margin').value)||20; document.getElementById('hj_res').innerText=`Harga Jual: Rp ${(m*(1+mg/100)).toLocaleString()} | Margin Rp ${(m*mg/100).toLocaleString()}`; }
+function calcHPP(){ const b=parseFloat(document.getElementById('hpp_bahan').value)||0; const t=parseFloat(document.getElementById('hpp_tenaga').value)||0; const o=parseFloat(document.getElementById('hpp_overhead').value)||0; document.getElementById('hpp_res').innerText=`HPP: Rp ${(b+t+o).toLocaleString()}`; }
+function calcLK(){ const p=parseFloat(document.getElementById('lk_penjualan').value)||0; const h=parseFloat(document.getElementById('lk_hpp').value)||0; document.getElementById('lk_res').innerText=`Laba Kotor: Rp ${(p-h).toLocaleString()} | Margin ${((p-h)/p*100).toFixed(1)}%`; }
+function calcLB(){ const k=parseFloat(document.getElementById('lb_kotor').value)||0; const b=parseFloat(document.getElementById('lb_biaya').value)||0; document.getElementById('lb_res').innerText=`Laba Bersih: Rp ${(k-b).toLocaleString()}`; }
+function calcMargin(){ const l=parseFloat(document.getElementById('margin_laba').value)||0; const j=parseFloat(document.getElementById('margin_jual').value)||1; document.getElementById('margin_res').innerText=`Margin: ${(l/j*100).toFixed(2)}%`; }
+function calcBEP(){ const f=parseFloat(document.getElementById('bep_fixed').value)||0; const v=parseFloat(document.getElementById('bep_var').value)||0; const h=parseFloat(document.getElementById('bep_harga').value)||1; const bep=f/(h-v); document.getElementById('bep_res').innerText=`BEP: ${bep.toFixed(0)} unit | Rp ${(bep*h).toLocaleString()}`; const canvas=document.getElementById('bepCanvas'); if(canvas){ const ctx=canvas.getContext('2d'); ctx.clearRect(0,0,280,150); ctx.fillStyle='#0a84ff'; ctx.fillRect(10,10,bep>100?100:bep,20); } }
+
+console.log('✅ BERITA + TOOLS 21 SEPARATED - Berita bisa di-klik, Tools bisa jalan, tidak tabrakan!');
+</script>
+</body>
+</html>
